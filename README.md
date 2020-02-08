@@ -2,4 +2,4 @@
 
 ### How to Run
 
-python main.py --test-data <test file>
+python main.py --test-data <test_file>
