@@ -208,7 +208,9 @@ if __name__ == "__main__":
 	# torch.save(model, 'torch_model.pth')
 
 	#### Load Saved Model
-	model=torch.load('model/torch_model.pth')
+	#model=torch.load('model/torch_model.pth')
+	model=torch.load('model/torch_model.pth',map_location=torch.device('cpu')) # To run model on CPU Only system
+	
 
 	#### Testing Data
 	test_data=pd.read_csv(str(sys.argv[2]),header=None).values
