@@ -11,7 +11,8 @@ import pandas as pd
 import sys
 import pickle
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+#device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+device='cpu'
 
 
 # In[2]:
